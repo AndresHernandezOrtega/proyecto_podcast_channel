@@ -1,0 +1,134 @@
+header{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    div{
+        width: 36px;
+        height: 36px;
+        padding-left: 20px;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+    #btn-menu:checked ~ nav{
+        position: absolute;
+        top: 54px;
+    }
+    #btn-menu:checked ~ .icon-menu i::before{
+        content: attr("class="fas fa-times"")
+    }
+
+    .icon-menu{
+        margin-right: 20px;
+        padding: 0 2px 0 2px;
+        border-radius: 2px;
+    }
+    nav{
+        display: block;
+        background-color: #0000EC;
+        width: 100%;
+        height: 224px;
+        position: absolute;
+        top: -100%;
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    
+        ul{
+            height: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                padding-left: 16px;
+                
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Break points
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        background-color: #fff;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        div{
+            width: 36px;
+            height: 36px;
+            padding-left: 100px;
+        }
+    
+        #btn-menu{
+            display: none;
+        }
+        #btn-menu:checked ~ nav{
+            position: absolute;
+            top: 54px;
+        }
+        #btn-menu:checked ~ .icon-menu i::before{
+            content: attr("class="fas fa-times"")
+        }
+    
+        .icon-menu{
+            margin-right: 20px;
+            padding: 0 2px 0 2px;
+            border-radius: 2px;
+            display: none;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            width: unset;
+            height: unset;
+            position: unset;
+            transition: none;
+            z-index: 100;
+            background-color: unset;
+            padding-right: 100px;
+        
+            ul{
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                li{
+                    list-style: none;
+                    padding-left: 48px;
+                    
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16px;
+                    &:hover{
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                        transition: 200ms ease;
+                        cursor: pointer;
+                    }
+                    &::after{
+                        color: #000;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  height: 44px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+header div {
+  width: 36px;
+  height: 36px;
+  padding-left: 20px;
+}
+
+header #btn-menu {
+  display: none;
+}
+
+header #btn-menu:checked ~ nav {
+  position: absolute;
+  top: 54px;
+}
+
+header #btn-menu:checked ~ .icon-menu i::before {
+  content: attr("class=" fas fa-times "");
+}
+
+header .icon-menu {
+  margin-right: 20px;
+  padding: 0 2px 0 2px;
+  border-radius: 2px;
+}
+
+header nav {
+  display: block;
+  background-color: #0000EC;
+  width: 100%;
+  height: 224px;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  z-index: 100;
+}
+
+header nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  list-style: none;
+  padding-left: 16px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    height: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+  }
+  header div {
+    width: 36px;
+    height: 36px;
+    padding-left: 100px;
+  }
+  header #btn-menu {
+    display: none;
+  }
+  header #btn-menu:checked ~ nav {
+    position: absolute;
+    top: 54px;
+  }
+  header #btn-menu:checked ~ .icon-menu i::before {
+    content: attr("class=" fas fa-times "");
+  }
+  header .icon-menu {
+    margin-right: 20px;
+    padding: 0 2px 0 2px;
+    border-radius: 2px;
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: unset;
+    height: unset;
+    position: unset;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 100;
+    background-color: unset;
+    padding-right: 100px;
+  }
+  header nav ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  header nav ul li {
+    list-style: none;
+    padding-left: 48px;
+  }
+  header nav ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  header nav ul a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
+    cursor: pointer;
+  }
+  header nav ul a::after {
+    color: #000;
+    text-decoration: line-through;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background: linear-gradient(#0000FF, #0000A3);
+  /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 1*/
+  /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 2*/
+}
+
+main .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  background-color: white;
+  padding-bottom: 45px;
+}
+
+main .section1 h1 {
+  color: #060A24;
+  font-size: 36px;
+  margin: 5% 28.8% 4% 5%;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main .section1 h1 s {
+  font-size: 36px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+}
+
+main .section1 p {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  width: 90%;
+  text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 3% 5% 7% 5%;
+  font-weight: bold;
+}
+
+main .section1 p .hidden-words {
+  display: none;
+}
+
+main .section1 .btn-1 {
+  width: 90%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #00F3BB;
+  border: none;
+  font-family: 'IBM Plex Sans', monospace;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 7%;
+}
+
+main .section1 .btn-1:hover {
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(90deg, #00F0B8, #0000FE);
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  main .section1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    background-color: white;
+    padding-bottom: 45px;
+  }
+  main .section1 h1 {
+    display: inline;
+    color: #060A24;
+    font-size: 64px;
+    margin: 120px 0 0 200px;
+    font-family: 'IBM Plex Sans', monospace;
+    font-weight: 400;
+  }
+  main .section1 h1 s {
+    font-size: 64px;
+    font-family: 'IBM Plex Sans', monospace;
+    color: #060A24;
+  }
+  main .section1 h1 span {
+    font-size: 64px;
+    color: #0000EC;
+    font-weight: 600;
+  }
+  main .section1 h1 .hidden-words {
+    display: inline;
+  }
+  main .section1 p {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left;
+    font-weight: bold;
+    margin: unset;
+    margin: 0 0 72px 200px;
+    width: 628px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .section1 p .hidden-words {
+    display: inline;
+  }
+  main .section1 .btn-1 {
+    width: 226px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00F3BB;
+    border: none;
+    font-family: 'IBM Plex Sans', monospace;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  main .section1 .btn-1:hover {
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+    background: linear-gradient(90deg, #00F0B8, #0000FE);
+    color: white;
+  }
+}
+
+main .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 143.5px;
+}
+
+main .section2 h2 {
+  color: white;
+  font-size: 36px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  margin: 12% 0 4% 5%;
+}
+
+main .section2 .podcast-container {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 11px 11px;
+}
+
+main .section2 .podcast-container .img-podcast {
+  width: 100%;
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  main .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 143.5px;
+  }
+  main .section2 h2 {
+    color: white;
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    margin: 3.8% 0 27px 200px;
+  }
+  main .section2 .podcast-container {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 47.5% 47.5%;
+        grid-template-columns: 47.5% 47.5%;
+    -ms-grid-rows: 47.5% 47.5%;
+        grid-template-rows: 47.5% 47.5%;
+    -ms-grid-row-align: center;
+        align-self: center;
+    gap: 10% 5%;
+  }
+  main .section2 .podcast-container .img-podcast {
+    width: 100%;
+  }
+  main .section2 .podcast-container .pod1 {
+    grid-area: 1 2 2 1;
+  }
+  main .section2 .podcast-container .pod2 {
+    grid-area: 1 3 2 2;
+  }
+  main .section2 .podcast-container .pod3 {
+    grid-area: 2 2 3 1;
+  }
+  main .section2 .podcast-container .pod4 {
+    grid-area: 2 3 3 2;
+  }
+}
+
+main .section3 {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+main .section3 .phone-img {
+  position: fixed;
+  top: 1px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*# sourceMappingURL=style.css.map */
