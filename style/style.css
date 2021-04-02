@@ -186,10 +186,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
-  background: linear-gradient(#0000FF, #0000A3);
+  background-color: white;
   /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 1*/
   /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 2*/
+  /* Medium devices (landscape tablets, 768px and up) Section 3 Historia  */
 }
 
 main .section1 {
@@ -200,8 +200,6 @@ main .section1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   background-color: white;
   padding-bottom: 45px;
 }
@@ -249,7 +247,7 @@ main .section1 .btn-1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 7%;
+  margin-bottom: 24px;
 }
 
 main .section1 .btn-1:hover {
@@ -270,8 +268,6 @@ main .section1 .btn-1:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
     background-color: white;
     padding-bottom: 45px;
   }
@@ -322,7 +318,7 @@ main .section1 .btn-1:hover {
     border: none;
     font-family: 'IBM Plex Sans', monospace;
     margin-left: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
     -ms-flex-item-align: start;
         align-self: flex-start;
     -webkit-transition: 500ms ease;
@@ -347,6 +343,10 @@ main .section2 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 143.5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background: linear-gradient(#0000FF, #0000A3);
+  -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
+          clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
 }
 
 main .section2 h2 {
@@ -354,7 +354,7 @@ main .section2 h2 {
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
-  margin: 12% 0 4% 5%;
+  margin: 64px 0 4% 5%;
 }
 
 main .section2 .podcast-container {
@@ -378,13 +378,17 @@ main .section2 .podcast-container .img-podcast {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 143.5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+    background: linear-gradient(#0000FF, #0000A3);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
   }
   main .section2 h2 {
     color: white;
     font-size: 36px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
-    margin: 3.8% 0 27px 200px;
+    margin: 186px 0 27px 200px;
   }
   main .section2 .podcast-container {
     width: 90vw;
@@ -397,6 +401,7 @@ main .section2 .podcast-container .img-podcast {
     -ms-grid-row-align: center;
         align-self: center;
     gap: 10% 5%;
+    margin-bottom: 84px;
   }
   main .section2 .podcast-container .img-podcast {
     width: 100%;
@@ -424,14 +429,100 @@ main .section3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0% 100%);
 }
 
 main .section3 .phone-img {
-  position: fixed;
-  top: 1px;
+  width: 360px;
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+main .section3 .content-nosotros {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+main .section3 .content-nosotros h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+main .section3 .content-nosotros p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 768px) {
+  main .section3 {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .section3 .phone-img {
+    width: 457px;
+    position: absolute;
+    top: 1460px;
+    left: 150px;
+    right: unset;
+    z-index: 200;
+  }
+  main .section3 .content-nosotros {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    position: relative;
+    top: 0;
+    width: 400px;
+    margin-top: 40px;
+  }
+  main .section3 .content-nosotros h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 40px;
+    color: #060A24;
+    margin-bottom: 24px;
+  }
+  main .section3 .content-nosotros p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    font-weight: bold;
+  }
+  main .section3 {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 256px 0 720px;
+  }
+  main .section3 h2 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  main .section3 p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    font-weight: bold;
+  }
+}
 /*# sourceMappingURL=style.css.map */

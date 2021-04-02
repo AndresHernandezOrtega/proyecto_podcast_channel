@@ -1,13 +1,12 @@
 main{
     display: flex;
     flex-flow: column;
-    background: linear-gradient(#0000FF, #0000A3);
+    background-color: white;
 
     // Section Number 1 "Hello world"
     .section1{
         display: flex;
         flex-flow: column;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         background-color: white;
         padding-bottom: 45px;
         h1{
@@ -47,7 +46,7 @@ main{
             border: none;
             font-family: 'IBM Plex Sans', monospace;
             align-self: center;
-            margin-bottom: 7%;
+            margin-bottom: 24px;
 
             &:hover{
                 transition: 500ms ease;
@@ -64,7 +63,6 @@ main{
         .section1{
             display: flex;
             flex-flow: column;
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
             background-color: white;
             padding-bottom: 45px;
             h1{
@@ -115,7 +113,7 @@ main{
                 border: none;
                 font-family: 'IBM Plex Sans', monospace;
                 margin-left: 200px;
-                margin-bottom: 100px;
+                margin-bottom: 5px;
                 align-self: flex-start;
                 transition: 500ms ease;
 
@@ -134,12 +132,14 @@ main{
         display: flex;
         flex-direction: column;
         padding-bottom: 143.5px;
+        background: linear-gradient(#0000FF, #0000A3);
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
         h2{
             color: white;
             font-size: 36px;
             font-family: 'IBM Plex Sans', sans-serif;
             font-weight: 300;
-            margin: 12% 0 4% 5%;
+            margin: 64px 0 4% 5%;
         }
         
         .podcast-container{
@@ -158,12 +158,14 @@ main{
             display: flex;
             flex-direction: column;
             padding-bottom: 143.5px;
+            background: linear-gradient(#0000FF, #0000A3);
+            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
             h2{
                 color: white;
                 font-size: 36px;
                 font-family: 'IBM Plex Sans', sans-serif;
                 font-weight: 300;
-                margin: 3.8% 0 27px 200px;
+                margin: 186px 0 27px 200px;
             }
             
             .podcast-container{
@@ -174,6 +176,7 @@ main{
                 grid-template-rows: 47.5% 47.5%;
                 align-self: center;
                 gap: 10% 5%;
+                margin-bottom: 84px;
                 .img-podcast{
                     width: 100%;     
                 }
@@ -194,19 +197,107 @@ main{
         }
     }
 
+
+    // Section Number 3 Historia 
     .section3{
         background-color: white;
         display: flex;
         flex-direction: column;
-        clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0% 100%);
+            // Phone image
         .phone-img{
-            position: fixed;
-            top: 1px;
+
+            width: 360px;
+            transform: translateY(-120px);
+
         }
+        .content-nosotros{
+            width: 90%;
+            align-self: center;
+            transform: translateY(-50px);
+            h2{
+                
+                align-self: flex-start;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 36px;
+                margin-bottom: 8px;
+                
+            }
+            
+            p{
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 14px;
+                color: #060A24;
+                font-weight: 900;
+            }
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) Section 3 Historia  */
+    @media only screen and (min-width: 768px) {
+        .section3{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+                // Phone image
+            .phone-img{
+
+                width: 457px;
+                position: absolute;
+                top: 1460px;
+                left: 150px;
+                right: unset;
+                z-index: 200;
+            }
+            .content-nosotros{
+                justify-self: center;
+                position: relative;
+                top: 0;
+                width: 400px;
+                margin-top: 40px;
+                h2{
+                    
+                    align-self: flex-start;
+                    font-family: 'IBM Plex Mono', sans-serif;
+                    font-size: 40px;
+                    color: #060A24;
+                    margin-bottom: 24px;
+                    
+                }
+                
+                p{
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 16px;
+                    color: #060A24;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+
+
+        // Section 3 Historia 
+    .section3{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 0 256px 0 720px;
+
+        h2{
+            font-family: 'IBM Plex Mono', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            
+        }
+        
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            color: #060A24;
+            font-weight: bold;
+        }
+    }
+
+
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
