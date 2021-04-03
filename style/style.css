@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -192,6 +193,7 @@ main {
   /* Medium devices (landscape tablets, 768px and up) Section 3 Historia  */
   /* Medium devices (landscape tablets, 768px and up) Section 4 Entrevistas  */
   /* Medium devices (landscape tablets, 768px and up) Section 5 Temas   */
+  /* Medium devices (landscape tablets, 768px and up) Section 6 Conoce más   */
 }
 
 main .section1 {
@@ -688,6 +690,102 @@ main .section5 .topics-container .topic h3 {
     font-size: 24px;
     text-align: center;
     margin: 13px 0 46px 0;
+  }
+}
+
+main .conocemas {
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+main .conocemas h2 {
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: 64px 0 36px 0;
+  font-family: 'IBM Plex Sans', monospace;
+  font-weight: 200;
+}
+
+main .conocemas .btn {
+  width: 90%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #00F3BB;
+  border: none;
+  font-family: 'IBM Plex Sans', monospace;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 67px;
+  color: #060A24;
+}
+
+main .conocemas .btn:hover {
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(90deg, #00F0B8, #0000FE);
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  main .conocemas {
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+  }
+  main .conocemas h2 {
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin: 213px 0 36px 0;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', monospace;
+  }
+  main .conocemas .btn {
+    width: 24%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00F3BB;
+    border: none;
+    font-family: 'IBM Plex Sans', monospace;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 151px;
+    color: #060A24;
+  }
+  main .conocemas .btn:hover {
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+    background: linear-gradient(90deg, #00F0B8, #0000FE);
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

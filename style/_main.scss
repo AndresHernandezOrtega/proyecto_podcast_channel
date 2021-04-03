@@ -425,5 +425,82 @@ main{
         }
     }
 
+    .conocemas{
+        background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        display: flex;
+        align-content: center;
+        flex-flow: column wrap;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+        h2{
+            color: white;
+            width: 90%;
+            text-align: center;
+            margin: 64px 0 36px 0;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 200;
+        }
+
+        .btn{
+            width: 90%;
+            height: 48px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #00F3BB;
+            border: none;
+            font-family: 'IBM Plex Sans', monospace;
+            align-self: center;
+            margin-bottom: 67px;
+            color: #060A24;
+
+            &:hover{
+                transition: 500ms ease;
+                cursor: pointer;
+                background: linear-gradient(90deg,#00F0B8, #0000FE);
+                color: white;
+            }
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) Section 6 Conoce más   */
+    @media only screen and (min-width: 768px) {
+        .conocemas{
+            background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+            display: flex;
+            align-content: center;
+            flex-flow: column wrap;
+            clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+
+            h2{
+                color: white;
+                width: 90%;
+                text-align: center;
+                margin: 213px 0 36px 0;
+                font-size: 40px;
+                font-weight: 300;
+                font-family: 'IBM Plex Sans', monospace;
+            }
+
+            .btn{
+                width: 24%;
+                height: 48px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #00F3BB;
+                border: none;
+                font-family: 'IBM Plex Sans', monospace;
+                align-self: center;
+                margin-bottom: 151px;
+                color: #060A24;
+
+                &:hover{
+                    transition: 500ms ease;
+                    cursor: pointer;
+                    background: linear-gradient(90deg,#00F0B8, #0000FE);
+                    color: white;
+                }
+            }
+        }
+    }   
 }
 
