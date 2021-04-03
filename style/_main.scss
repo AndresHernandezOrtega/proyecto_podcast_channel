@@ -360,5 +360,70 @@ main{
         }
     }
 
+    .section5{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        h2{
+            width: 90%;
+            font-size: 36px;
+            margin: 48px 0 44px 0;
+            font-family: 'IBM Plex Sans', monospace;
+        }
+        .topics-container{
+            display: flex;
+            flex-flow: column wrap;
+            align-self: center;
+            .topic{
+                display: flex;
+                flex-flow: column wrap;
+
+                h3{
+                    width: 90%;
+                    font-family: 'IBM Plex Sans', monospace;
+                    font-size: 24px;
+                    text-align: center;
+                    margin: 13px 0 46px 0;
+                }
+            }
+        }
+    }
+    /* Medium devices (landscape tablets, 768px and up) Section 5 Temas   */
+    @media only screen and (min-width: 768px) {
+        .section5{
+            display: flex;
+            flex-flow: column wrap;
+
+            
+            h2{
+                width: unset;
+                font-size: 36px;
+                margin: 48px 0 66px 0;
+                font-family: 'IBM Plex Sans', monospace;
+            }
+
+            .topics-container{
+                display: flex;
+                flex-flow: row wrap;
+                align-self: center;
+                justify-content: space-between;
+                width: 72%;
+                .topic{
+                    display: flex;
+                    flex-flow: column wrap;
+                    
+                    h3{
+                        
+                        width: unset;
+                        font-family: 'IBM Plex Sans', monospace;
+                        font-size: 24px;
+                        text-align: center;
+                        margin: 13px 0 46px 0;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
