@@ -190,6 +190,7 @@ main {
   /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 1*/
   /* Medium devices (landscape tablets, 768px and up) SECTION NUMBER 2*/
   /* Medium devices (landscape tablets, 768px and up) Section 3 Historia  */
+  /* Medium devices (landscape tablets, 768px and up) Section 4 Entrevistas  */
 }
 
 main .section1 {
@@ -449,7 +450,7 @@ main .section3 .content-nosotros {
 main .section3 .content-nosotros h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Sans', monospace;
   font-size: 36px;
   margin-bottom: 8px;
 }
@@ -491,7 +492,7 @@ main .section3 .content-nosotros p {
   main .section3 .content-nosotros h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Sans', monospace;
     font-size: 40px;
     color: #060A24;
     margin-bottom: 24px;
@@ -523,6 +524,71 @@ main .section3 .content-nosotros p {
     font-size: 14px;
     color: #060A24;
     font-weight: bold;
+  }
+}
+
+main .section4 {
+  margin-top: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+main .section4 h2 {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 36px;
+  color: #060A24;
+  margin-bottom: 14px;
+  font-family: 'IBM Plex Sans', monospace;
+}
+
+main .section4 .fotos-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-column: repeat(16.6%, 6);
+}
+
+main .section4 .fotos-container .foto-personaje {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  main .section4 {
+    margin-top: 54px;
+  }
+  main .section4 h2 {
+    width: unset;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    font-size: 36px;
+    color: #060A24;
+    margin-bottom: 36px;
+    margin-top: 260px;
+    margin-left: 200px;
+    margin-right: 0;
+    font-family: 'IBM Plex Sans', monospace;
+  }
+  main .section4 .fotos-container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  main .section4 .fotos-container .foto-personaje {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
