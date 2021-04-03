@@ -42,10 +42,6 @@ header #btn-menu:checked ~ nav {
   top: 54px;
 }
 
-header #btn-menu:checked ~ .icon-menu i::before {
-  content: attr("class=" fas fa-times "");
-}
-
 header .icon-menu {
   margin-right: 20px;
   padding: 0 2px 0 2px;
@@ -173,7 +169,7 @@ header nav ul a {
     transition: 200ms ease;
     cursor: pointer;
   }
-  header nav ul a::after {
+  header nav ul a:active {
     color: #000;
     text-decoration: line-through;
   }
@@ -786,6 +782,82 @@ main .conocemas .btn:hover {
     background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
     background: linear-gradient(90deg, #00F0B8, #0000FE);
     color: white;
+  }
+}
+
+footer {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  /* Medium devices (landscape tablets, 768px and up) Footer   */
+}
+
+footer p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 24px 0 16px 0;
+}
+
+footer .social-media {
+  margin: 0 0 31px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0 100px;
+  }
+  footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 24px 0 16px 0;
+  }
+  footer .social-media {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 25%;
+    margin: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */

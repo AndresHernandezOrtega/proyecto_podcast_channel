@@ -16,13 +16,13 @@
     <header>
         <div><img src="src/landingUI_desktop_mobile_kit/assets/logo.svg" alt=""></div>
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu" class="icon-menu"><i class="fas fa-bars" ></i></label>
+        <label for="btn-menu" class="icon-menu"><i class="fas fa-bars" id="bars" ></i></label>
         <nav>
             <ul>
                 <li><a href="#episodios">EPISODIOS</a></li>
                 <li><a href="#nosotros">NOSOTROS</a></li>
                 <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                <li><a href="">TÓPICOS</a></li>
+                <li><a href="#topicos">TÓPICOS</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             <h1>Hello <s>World</s> pale blue dot<span id="blue-dot">.</span></h1>
             <p>Un podcast que explora el mundo de la programacion<span class="hidden-words"> y 
             la tecnologia</span>. Nuevos episodios, todos los jueves cada 15 dias.</p>
-            <button class="btn-1">CONOCÉ MÁS</button>
+            <button class="btn-1" role="link" onclick="window.location.href='#nosotros'">CONOCÉ MÁS</button>
         </section>
         <section class="section2" id="episodios">
             <h2 id="Episodios">Episodios</h2>
@@ -89,8 +89,18 @@
         </section>
         <section class="conocemas">
             <h2>¿Querés las últimas novedades?</h2>
-            <button class="btn">ESCUCHÁ LOS EPISODIOS</button>
+            <button class="btn" role="link" onclick="window.location='https://open.spotify.com/show/2ySVrxGkN6n6frMTo9Nsrt'">ESCUCHÁ LOS EPISODIOS</button>
         </section>
     </main>
+    <footer>
+        <p>© 2019— Hello blue pale dot </p>
+        <div class="social-media">
+            <a href="https://open.spotify.com/show/2ySVrxGkN6n6frMTo9Nsrt"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

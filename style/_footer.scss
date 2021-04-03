@@ -1,0 +1,44 @@
+footer{
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    p{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        font-weight: 900;
+        margin: 24px 0 16px 0;
+    }
+
+    .social-media{
+        margin: 0 0 31px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) Footer   */
+    @media only screen and (min-width: 768px) {
+        background-color: #fff;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0 100px;
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            font-weight: 900;
+            margin: 24px 0 16px 0;
+        }
+
+        .social-media{
+            align-self: center;
+            width: 25%;
+            margin: unset;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+}
