@@ -150,6 +150,9 @@ main{
             .img-podcast{
                 width: 100%;
                 margin: 5px 0;
+                height: 232px;   
+                border: none;
+
             }
         }
     }
@@ -180,21 +183,11 @@ main{
                 gap: 10% 5%;
                 margin-bottom: 84px;
                 .img-podcast{
-                    width: 100%;     
+                    width: 100%;  
+                    height: 232px;   
+                    border: none;
                 }
 
-                .pod1{
-                    grid-area: 1 2 2 1;
-                }
-                .pod2{
-                    grid-area: 1 3 2 2;
-                }
-                .pod3{
-                    grid-area: 2 2 3 1;
-                }
-                .pod4{
-                    grid-area: 2 3 3 2;
-                }
             }
         }
     }
@@ -324,7 +317,6 @@ main{
         .fotos-container{
             display: grid;
             grid-template-columns: 100%;
-            grid-column: repeat(16.6%,6);
             .foto-personaje{
                 width: 100%;
             }
